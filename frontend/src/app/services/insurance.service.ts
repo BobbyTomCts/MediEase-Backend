@@ -44,7 +44,7 @@ export interface InsurancePackage {
   providedIn: 'root'
 })
 export class InsuranceService {
-  private apiUrl = '/api';
+  private apiUrl = 'http://localhost:8082/api';
 
   constructor(private http: HttpClient) {}
 

@@ -28,7 +28,7 @@ export interface LoginResponse {
 })
 export class Auth {
   // Backend API URL
-  private apiUrl = '/api/users';
+  private apiUrl = 'http://localhost:8082/api/users';
 
   constructor(private http: HttpClient) { }
 

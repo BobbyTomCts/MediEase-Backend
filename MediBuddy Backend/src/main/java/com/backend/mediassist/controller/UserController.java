@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/users")
+@CrossOrigin(origins = "http://localhost:4200")
 public class UserController {
     
     @Autowired
     private UserService userService;
-    
-    // Register new user
+
     @PostMapping("/register")
     public User register(@RequestBody User user) {
         return userService.registerUser(user);

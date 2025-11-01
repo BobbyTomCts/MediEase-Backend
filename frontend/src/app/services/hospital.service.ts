@@ -19,7 +19,7 @@ export interface Hospital {
   providedIn: 'root'
 })
 export class HospitalService {
-  private apiUrl = '/api/hospitals';
+  private apiUrl = 'http://localhost:8082/api/hospitals';
 
   constructor(private http: HttpClient) {}
 
